@@ -53,8 +53,7 @@ class ProfileViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var caloriesSlider: UISlider!
     
     @IBOutlet weak var caloriesTextField: UITextField!
-    
-    
+
     
     @IBAction func weightSegmentAction(_ sender: Any) {
         if weightSegmentControl.selectedSegmentIndex == 0 {
@@ -67,15 +66,23 @@ class ProfileViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBAction func stepsSliderEditingEnded(_ sender: Any) {
-        stepsGoals = Int(floor(stepsSlider.value))
-        //stepsSlider.setValue(Float(stepsGoals!), animated: true)
-        //print(stepsGoals)
-//        stepsTextField.text = String(describing: stepsGoals!)
+        if stepsGoals != nil {
+            stepsGoals = Int(floor(stepsSlider.value))
+        }
     }
     
     @IBAction func stepsSliderBeingEdited(_ sender: Any) {
         let currentStepsOnSlider = Int(floor(stepsSlider.value))
         stepsTextField.text = String(currentStepsOnSlider)
+    }
+    
+    @IBAction func caloriesSliderEditingEnded(_ sender: Any) {
+        caloriesGoals = Int(floor(caloriesSlider.value))
+    }
+    
+    @IBAction func caloriesSliderBeingEdited(_ sender: Any) {
+        let currentCaloriesOnSlider = Int(floor(caloriesSlider.value))
+        caloriesTextField.text = String(currentCaloriesOnSlider)
     }
     
     var name: String?
@@ -85,6 +92,10 @@ class ProfileViewController: UIViewController, UITextFieldDelegate {
     var stepsGoals: Int?
     var caloriesGoals: Int?
     
+    var keyboardHeight: CGFloat?
+    
+    
+    
     func hideKeyboardWhenTappedAround() {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         tap.cancelsTouchesInView = false
@@ -93,6 +104,24 @@ class ProfileViewController: UIViewController, UITextFieldDelegate {
     
     func dismissKeyboard() {
         view.endEditing(true)
+    }
+    
+    func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? CGRect {
+            keyboardHeight = keyboardSize.height
+        }
+    }
+    
+    func animateViewMoving (up:Bool, moveValue :CGFloat){
+        let movementDuration:TimeInterval = 0.3
+        //let movement:CGFloat = ( up ? -moveValue : moveValue)
+        
+        UIView.beginAnimations("animateView", context: nil)
+        UIView.setAnimationBeginsFromCurrentState(true)
+        UIView.setAnimationDuration(movementDuration)
+        
+        self.view.frame = self.view.frame.offsetBy(dx: 0, dy: -moveValue)
+        UIView.commitAnimations()
     }
     
     override func viewDidLoad() {
@@ -128,6 +157,10 @@ class ProfileViewController: UIViewController, UITextFieldDelegate {
         caloriesSlider.minimumValue = 100
         caloriesSlider.setValue(2000, animated: true)
         caloriesTextField.text = "Calories"
+        
+        //NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: .UIKeyboardWillShow, object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         
         profileNavigationBar.titleTextAttributes = [NSForegroundColorAttributeName: nandoRed]
 
@@ -191,12 +224,21 @@ class ProfileViewController: UIViewController, UITextFieldDelegate {
         }
         
         else if textField == stepsTextField {
-            stepsTextField.text = ""
+            
+            if textField.text == "Steps"
+            {
+                textField.text = ""
+            }
             
         }
         
-        else if textField == weightTextField {
-            weightTextField.text = ""
+        else if textField == caloriesTextField {
+
+            animateViewMoving(up: true, moveValue: 200) // need to fix with keyboardheight
+            if textField.text == "Calories"
+            {
+                textField.text = ""
+            }
         }
     }
     
@@ -237,18 +279,6 @@ class ProfileViewController: UIViewController, UITextFieldDelegate {
         }
         
         else if textField == stepsTextField {
-            /*let userSteps: String? = stepsTextField.text
-            
-            if userSteps?.integerValue == nil {
-                stepsTextField.text = String(stepsGoals)
-            }
-            else if (userSteps?.integerValue)! < 5000 || (userSteps?.integerValue)! > 25000 {
-                stepsTextField.text = String(stepsGoals)
-            }
-            else {
-                stepsGoals = (userSteps?.integerValue)!
-                stepsSlider.setValue(Float(stepsGoals), animated: true)
-            }*/
             if let stepsInteger = textField.text?.integerValue {
                 if stepsInteger < 5000 || stepsInteger > 25000 {
                     if stepsGoals == nil {
@@ -274,20 +304,29 @@ class ProfileViewController: UIViewController, UITextFieldDelegate {
         }
             
         else if textField == caloriesTextField {
-            let userCalories: String? = caloriesTextField.text
-            
-            if userCalories?.integerValue == nil {
-                caloriesTextField.text = String(caloriesGoals!)
-            }
-            else if (userCalories?.integerValue)! < 5000 || (userCalories?.integerValue)! > 25000 {
-                caloriesTextField.text = String(caloriesGoals!)
+            animateViewMoving(up: true, moveValue: -200) // need to fix
+            if let caloriesInteger = textField.text?.integerValue {
+                if caloriesInteger < 100 || caloriesInteger > 4000 {
+                    if caloriesGoals == nil {
+                        caloriesTextField.text = "Calories"
+                    }
+                    else {
+                        caloriesTextField.text = String(caloriesGoals!)
+                    }
+                }
+                else {
+                    caloriesGoals = caloriesInteger
+                    caloriesSlider.setValue(Float(caloriesInteger), animated: true)
+                }
             }
             else {
-                caloriesGoals = (userCalories?.integerValue)!
-                stepsSlider.setValue(Float(caloriesGoals!), animated: true)
+                if caloriesGoals == nil {
+                    caloriesTextField.text = "Calories"
+                }
+                else {
+                    caloriesTextField.text = String(caloriesGoals!)
+                }
             }
         }
-        
     }
-
 }

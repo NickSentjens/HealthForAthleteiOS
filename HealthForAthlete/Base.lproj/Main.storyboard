@@ -254,6 +254,10 @@
                                 <rect key="frame" x="42" y="493" width="290" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.72336632013320923" green="0.19583759243055091" blue="0.075855075143044723" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="caloriesSliderBeingEdited:" destination="G4O-QG-saU" eventType="valueChanged" id="gRV-ri-oU2"/>
+                                    <action selector="caloriesSliderEditingEnded:" destination="G4O-QG-saU" eventType="valueChanged" id="Fpw-qD-wLJ"/>
+                                </connections>
                             </slider>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Acitve Energy Per Day:" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="F0Z-0F-MDk">
                                 <rect key="frame" x="44" y="533" width="159" height="33"/>
