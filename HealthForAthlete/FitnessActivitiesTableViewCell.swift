@@ -10,15 +10,13 @@ import UIKit
 
 class FitnessActivitiesTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var activityNameTextField: UITextField!
+    @IBOutlet weak var activityNameTextView: UITextView!
+    @IBOutlet weak var activityImage: UIImageView!
+    @IBOutlet weak var howOftenValueTextView: UITextView!
+    @IBOutlet weak var dayValueTextView: UITextView!
+    @IBOutlet weak var durationValueTextView: UITextView!
     
-    @IBOutlet weak var activityUIImage: UIImageView!
     
-    @IBOutlet weak var howOftenValueTextField: UITextField!
-    
-    @IBOutlet weak var dayValueTextField: UITextField!
-    
-    @IBOutlet weak var deleteButton: UIButton!
     
     
     override func awakeFromNib() {

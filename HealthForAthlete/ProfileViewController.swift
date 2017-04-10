@@ -54,6 +54,7 @@ class ProfileViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var caloriesTextField: UITextField!
 
+
     
     @IBAction func weightSegmentAction(_ sender: Any) {
         if weightSegmentControl.selectedSegmentIndex == 0 {

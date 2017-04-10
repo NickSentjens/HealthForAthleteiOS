@@ -8,15 +8,25 @@
 
 import UIKit
 
-final class SchedulesViewController: UIViewController {
+class SchedulesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     let nandoRed: UIColor = UIColor(colorLiteralRed: 188/255, green: 23/255, blue: 23/255, alpha: 1.0)
     
     @IBOutlet weak var schedulesNavigationBar: UINavigationBar!
+    
+    let cellIdentifier = "CellIdentifier"
+    var activities: [FitnessActivity] = []
+    var fruits: [String] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         schedulesNavigationBar.titleTextAttributes = [NSForegroundColorAttributeName: nandoRed]
+        
+        var baseballActivity: FitnessActivity = FitnessActivity(activityName: "Baseball", activityPhoto: nil, howOften: "Weekly", dayValue: "Every Wednesday", howManyHours: 1.5)!
+        
+        //fruits = ["Apple", "Pineapple", "Orange", "Blackberry", "Banana", "Pear", "Kiwi", "Strawberry", "Mango", "Walnut", "Apricot", "Tomato", "Almond", "Date", "Melon", "Water Melon", "Lemon", "Coconut", "Fig", "Passionfruit", "Star Fruit", "Clementin", "Citron", "Cherry", "Cranberry"]
+        
+        activities.append(baseballActivity)
         // Do any additional setup after loading the view.
     }
 
@@ -37,6 +47,40 @@ final class SchedulesViewController: UIViewController {
     }
     */
 
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return activities.count
+        //return fruits.count
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var cell: FitnessActivitiesTableViewCell
+        
+        cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath as IndexPath) as! FitnessActivitiesTableViewCell
+        
+        // Fetch activity
+        let activity = activities[indexPath.row]
+        
+        // Configure Cell
+        cell.activityNameTextView.text = activity.activityName
+        cell.activityImage.image = activity.activityPhoto
+        cell.howOftenValueTextView.text = activity.howOften
+        cell.dayValueTextView.text = activity.dayValue
+        cell.durationValueTextView.text = String(activity.howManyHours)
+        
+        
+        /*// Fetch Fruit
+        let fruit = fruits[indexPath.row]
+        
+        // Configure Cell
+        cell.textLabel?.text = fruit*/
+        
+        return cell
+    }
     
     
     

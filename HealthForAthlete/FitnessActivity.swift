@@ -19,6 +19,7 @@ class FitnessActivity {
     var dayValue: String // example: Every Wednesday or April 2, 2017
     var howManyHours: Float
     
+    
     var stepsPerHour: Int
     var caloriesPerHour: Int
     
