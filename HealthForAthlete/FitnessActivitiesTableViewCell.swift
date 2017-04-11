@@ -16,9 +16,6 @@ class FitnessActivitiesTableViewCell: UITableViewCell {
     @IBOutlet weak var dayValueTextView: UITextView!
     @IBOutlet weak var durationValueTextView: UITextView!
     
-    
-    
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

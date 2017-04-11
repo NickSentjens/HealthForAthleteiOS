@@ -13,6 +13,12 @@ class SchedulesViewController: UIViewController, UITableViewDelegate, UITableVie
     
     @IBOutlet weak var schedulesNavigationBar: UINavigationBar!
     
+    @IBAction func newBarButtonItemTapped(_ sender: Any) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        
+        let createScheduleViewController = storyBoard.instantiateViewController(withIdentifier: "createSchedule") as! CreateScheduleViewController
+        self.present(createScheduleViewController, animated:true, completion:nil)
+    }
     let cellIdentifier = "CellIdentifier"
     var activities: [FitnessActivity] = []
     var fruits: [String] = []
@@ -22,12 +28,15 @@ class SchedulesViewController: UIViewController, UITableViewDelegate, UITableVie
         
         schedulesNavigationBar.titleTextAttributes = [NSForegroundColorAttributeName: nandoRed]
         
-        var baseballActivity: FitnessActivity = FitnessActivity(activityName: "Baseball", activityPhoto: nil, howOften: "Weekly", dayValue: "Every Wednesday", howManyHours: 1.5)!
+        let baseballImage: UIImage = UIImage(named: "baseball.png")!
+        var baseballActivity: FitnessActivity = FitnessActivity(activityName: "Baseball", activityPhoto: baseballImage, howOften: "Weekly", dayValue: "Every Wednesday", howManyHours: 1.5)!
         
         //fruits = ["Apple", "Pineapple", "Orange", "Blackberry", "Banana", "Pear", "Kiwi", "Strawberry", "Mango", "Walnut", "Apricot", "Tomato", "Almond", "Date", "Melon", "Water Melon", "Lemon", "Coconut", "Fig", "Passionfruit", "Star Fruit", "Clementin", "Citron", "Cherry", "Cranberry"]
         
         activities.append(baseballActivity)
         // Do any additional setup after loading the view.
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -68,9 +77,9 @@ class SchedulesViewController: UIViewController, UITableViewDelegate, UITableVie
         // Configure Cell
         cell.activityNameTextView.text = activity.activityName
         cell.activityImage.image = activity.activityPhoto
-        cell.howOftenValueTextView.text = activity.howOften
-        cell.dayValueTextView.text = activity.dayValue
-        cell.durationValueTextView.text = String(activity.howManyHours)
+        cell.howOftenValueTextView.text = "How Often: \(activity.howOften)"
+        cell.dayValueTextView.text = "What Day: \(activity.dayValue)"
+        cell.durationValueTextView.text = "Duration: \(String(activity.howManyHours)) Hours"
         
         
         /*// Fetch Fruit
