@@ -11,6 +11,7 @@
 		0100AF7C1E9896700054D6E5 /* FitnessActivitiesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0100AF7B1E9896700054D6E5 /* FitnessActivitiesTableViewController.swift */; };
 		0100AF7E1E9897330054D6E5 /* FitnessActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0100AF7D1E9897330054D6E5 /* FitnessActivity.swift */; };
 		0100AF801E9C77090054D6E5 /* CreateScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0100AF7F1E9C77090054D6E5 /* CreateScheduleViewController.swift */; };
+		012A0A951E9DE460007E3347 /* TestCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012A0A941E9DE460007E3347 /* TestCreateViewController.swift */; };
 		01553F1E1E932FA400AB6577 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01553F1D1E932FA400AB6577 /* HealthKit.framework */; };
 		01D9E1201E8CBA370010C208 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D9E11F1E8CBA370010C208 /* AppDelegate.swift */; };
 		01D9E1221E8CBA370010C208 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D9E1211E8CBA370010C208 /* ViewController.swift */; };
@@ -39,6 +40,7 @@
 		0100AF7B1E9896700054D6E5 /* FitnessActivitiesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FitnessActivitiesTableViewController.swift; sourceTree = "<group>"; };
 		0100AF7D1E9897330054D6E5 /* FitnessActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FitnessActivity.swift; sourceTree = "<group>"; };
 		0100AF7F1E9C77090054D6E5 /* CreateScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateScheduleViewController.swift; sourceTree = "<group>"; };
+		012A0A941E9DE460007E3347 /* TestCreateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestCreateViewController.swift; sourceTree = "<group>"; };
 		01553F171E9326FD00AB6577 /* HealthForAthlete.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HealthForAthlete.entitlements; sourceTree = "<group>"; };
 		01553F1D1E932FA400AB6577 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		01D9E11C1E8CBA370010C208 /* HealthForAthlete.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthForAthlete.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,6 +112,7 @@
 				01D9E11F1E8CBA370010C208 /* AppDelegate.swift */,
 				01D9E1211E8CBA370010C208 /* ViewController.swift */,
 				0100AF7F1E9C77090054D6E5 /* CreateScheduleViewController.swift */,
+				012A0A941E9DE460007E3347 /* TestCreateViewController.swift */,
 				01D9E1471E8E0D400010C208 /* TabBarViewController.swift */,
 				01D9E1411E8DF6230010C208 /* ProfileViewController.swift */,
 				01D9E1231E8CBA370010C208 /* Main.storyboard */,
@@ -253,6 +256,7 @@
 				0100AF7C1E9896700054D6E5 /* FitnessActivitiesTableViewController.swift in Sources */,
 				01D9E1481E8E0D400010C208 /* TabBarViewController.swift in Sources */,
 				01D9E1461E8E0A690010C208 /* SchedulesViewController.swift in Sources */,
+				012A0A951E9DE460007E3347 /* TestCreateViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

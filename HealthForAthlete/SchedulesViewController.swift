@@ -16,7 +16,7 @@ class SchedulesViewController: UIViewController, UITableViewDelegate, UITableVie
     @IBAction func newBarButtonItemTapped(_ sender: Any) {
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         
-        let createScheduleViewController = storyBoard.instantiateViewController(withIdentifier: "createSchedule") as! CreateScheduleViewController
+        let createScheduleViewController = storyBoard.instantiateViewController(withIdentifier: "testNick") as! TestCreateViewController
         self.present(createScheduleViewController, animated:true, completion:nil)
     }
     let cellIdentifier = "CellIdentifier"
