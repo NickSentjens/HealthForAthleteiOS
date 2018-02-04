@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="calendarTableViewCell" rowHeight="53" id="yCh-t2-UiF" customClass="CalendarTableViewCell" customModule="HealthForAthlete" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="336" height="53"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yCh-t2-UiF" id="e7W-26-A7M">
+                <rect key="frame" x="0.0" y="0.0" width="336" height="52.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2GT-kL-iRn">
+                        <rect key="frame" x="12" y="12" width="42" height="28.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xeW-Ea-nBO">
+                        <rect key="frame" x="278" y="12" width="46" height="30"/>
+                        <state key="normal" title="Button"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="2GT-kL-iRn" firstAttribute="centerY" secondItem="xeW-Ea-nBO" secondAttribute="centerY" id="9hn-pF-fk1"/>
+                    <constraint firstAttribute="bottom" secondItem="2GT-kL-iRn" secondAttribute="bottom" constant="12" id="AwY-XB-jvV"/>
+                    <constraint firstAttribute="trailing" secondItem="xeW-Ea-nBO" secondAttribute="trailing" constant="12" id="KXR-7L-lMb"/>
+                    <constraint firstItem="2GT-kL-iRn" firstAttribute="top" secondItem="e7W-26-A7M" secondAttribute="top" constant="12" id="l9F-8H-Qcs"/>
+                    <constraint firstItem="2GT-kL-iRn" firstAttribute="leading" secondItem="e7W-26-A7M" secondAttribute="leading" constant="12" id="ndA-v0-iK3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dateLabel" destination="2GT-kL-iRn" id="6Cj-1C-x9V"/>
+                <outlet property="deleteButton" destination="xeW-Ea-nBO" id="tgk-EK-aJT"/>
+            </connections>
+            <point key="canvasLocation" x="9" y="-152.5"/>
+        </tableViewCell>
+    </objects>
+</document>

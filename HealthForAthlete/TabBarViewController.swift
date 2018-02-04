@@ -14,19 +14,6 @@ class TabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-        
-        // Setting tab bar titles and Images
-        
-        
-        /*tabBar.items?[0].title = "Today"
-        tabBar.items?[1].title = "Schedules"
-        tabBar.items?[2].title = " Profile"
-        
-        tabBar.items?[0].image = UIImage(named: "check.png")
-        tabBar.items?[1].image = UIImage(named: "ScheduleIcon.png")
-        tabBar.items?[2].image = UIImage(named: "Icon-24.png")*/
-        
         let selectedStateImages = ["selectedCheckIcon.png", "selectedScheduleIcon.png", "selectedProfileIcon.png"]
         let unselectedStateImages = ["checkIcon.png", "scheduleIcon.png", "profileIcon.png"]
         
@@ -40,11 +27,8 @@ class TabBarViewController: UITabBarController {
             }
         }
         
-        /*let selectedColor   = UIColor(red: 246.0/255.0, green: 155.0/255.0)
-        let unselectedColor = UIColor(red: 16.0/255.0, green: 224.0/255.0, blue: 223.0/255.0, alpha: 1.0)*/
-        
-        tabBar.items?[0].title = "Today"
-        tabBar.items?[1].title = "Schedules"
+        tabBar.items?[0].title = "Your Day"
+        tabBar.items?[1].title = "Your Calender"
         tabBar.items?[2].title = " Profile"
         
         UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: nandoRed], for: .selected)
@@ -55,16 +39,5 @@ class TabBarViewController: UITabBarController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

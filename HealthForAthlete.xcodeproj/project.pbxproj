@@ -7,22 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0100AF7A1E987E8A0054D6E5 /* FitnessActivitiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0100AF791E987E890054D6E5 /* FitnessActivitiesTableViewCell.swift */; };
-		0100AF7C1E9896700054D6E5 /* FitnessActivitiesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0100AF7B1E9896700054D6E5 /* FitnessActivitiesTableViewController.swift */; };
-		0100AF7E1E9897330054D6E5 /* FitnessActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0100AF7D1E9897330054D6E5 /* FitnessActivity.swift */; };
-		0100AF801E9C77090054D6E5 /* CreateScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0100AF7F1E9C77090054D6E5 /* CreateScheduleViewController.swift */; };
-		012A0A951E9DE460007E3347 /* TestCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012A0A941E9DE460007E3347 /* TestCreateViewController.swift */; };
+		010DA0551FC672570069A0FC /* CalendarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010DA0541FC672570069A0FC /* CalendarTableViewCell.swift */; };
+		010DA0571FC6732A0069A0FC /* CalendarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 010DA0561FC6732A0069A0FC /* CalendarTableViewCell.xib */; };
 		01553F1E1E932FA400AB6577 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01553F1D1E932FA400AB6577 /* HealthKit.framework */; };
+		01ACCAAE1FB8F6B10074E6D7 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01ACCAAD1FB8F6B10074E6D7 /* CustomCell.swift */; };
 		01D9E1201E8CBA370010C208 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D9E11F1E8CBA370010C208 /* AppDelegate.swift */; };
-		01D9E1221E8CBA370010C208 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D9E1211E8CBA370010C208 /* ViewController.swift */; };
 		01D9E1251E8CBA370010C208 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01D9E1231E8CBA370010C208 /* Main.storyboard */; };
 		01D9E1271E8CBA370010C208 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01D9E1261E8CBA370010C208 /* Assets.xcassets */; };
 		01D9E12A1E8CBA370010C208 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01D9E1281E8CBA370010C208 /* LaunchScreen.storyboard */; };
 		01D9E1351E8CBA380010C208 /* HealthForAthleteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D9E1341E8CBA380010C208 /* HealthForAthleteTests.swift */; };
 		01D9E1421E8DF6230010C208 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D9E1411E8DF6230010C208 /* ProfileViewController.swift */; };
 		01D9E1441E8E09580010C208 /* TodayInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D9E1431E8E09580010C208 /* TodayInfoViewController.swift */; };
-		01D9E1461E8E0A690010C208 /* SchedulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D9E1451E8E0A690010C208 /* SchedulesViewController.swift */; };
+		01D9E1461E8E0A690010C208 /* YourCalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D9E1451E8E0A690010C208 /* YourCalendarViewController.swift */; };
 		01D9E1481E8E0D400010C208 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D9E1471E8E0D400010C208 /* TabBarViewController.swift */; };
+		24944D9B65CE3835E290D05F /* Pods_HealthForAthleteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423C3C8755B8EE7D461895EE /* Pods_HealthForAthleteTests.framework */; };
+		74827216B633D20647210C47 /* Pods_HealthForAthlete.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A8AA16A43B46118465C8638 /* Pods_HealthForAthlete.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,16 +35,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0100AF791E987E890054D6E5 /* FitnessActivitiesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FitnessActivitiesTableViewCell.swift; sourceTree = "<group>"; };
-		0100AF7B1E9896700054D6E5 /* FitnessActivitiesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FitnessActivitiesTableViewController.swift; sourceTree = "<group>"; };
-		0100AF7D1E9897330054D6E5 /* FitnessActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FitnessActivity.swift; sourceTree = "<group>"; };
-		0100AF7F1E9C77090054D6E5 /* CreateScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateScheduleViewController.swift; sourceTree = "<group>"; };
-		012A0A941E9DE460007E3347 /* TestCreateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestCreateViewController.swift; sourceTree = "<group>"; };
+		010DA0541FC672570069A0FC /* CalendarTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalendarTableViewCell.swift; path = ../CalendarTableViewCell.swift; sourceTree = "<group>"; };
+		010DA0561FC6732A0069A0FC /* CalendarTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarTableViewCell.xib; sourceTree = "<group>"; };
 		01553F171E9326FD00AB6577 /* HealthForAthlete.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HealthForAthlete.entitlements; sourceTree = "<group>"; };
 		01553F1D1E932FA400AB6577 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		01ACCAAD1FB8F6B10074E6D7 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		01D9E11C1E8CBA370010C208 /* HealthForAthlete.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthForAthlete.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01D9E11F1E8CBA370010C208 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		01D9E1211E8CBA370010C208 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		01D9E1241E8CBA370010C208 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		01D9E1261E8CBA370010C208 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01D9E1291E8CBA370010C208 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,8 +51,14 @@
 		01D9E1361E8CBA380010C208 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01D9E1411E8DF6230010C208 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		01D9E1431E8E09580010C208 /* TodayInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayInfoViewController.swift; sourceTree = "<group>"; };
-		01D9E1451E8E0A690010C208 /* SchedulesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchedulesViewController.swift; sourceTree = "<group>"; };
+		01D9E1451E8E0A690010C208 /* YourCalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourCalendarViewController.swift; sourceTree = "<group>"; };
 		01D9E1471E8E0D400010C208 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		423C3C8755B8EE7D461895EE /* Pods_HealthForAthleteTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthForAthleteTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4523A4EA5C4AA920B39A1E18 /* Pods-HealthForAthlete.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthForAthlete.release.xcconfig"; path = "Pods/Target Support Files/Pods-HealthForAthlete/Pods-HealthForAthlete.release.xcconfig"; sourceTree = "<group>"; };
+		6C446F7031269CECDFCC9F04 /* Pods-HealthForAthlete.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthForAthlete.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HealthForAthlete/Pods-HealthForAthlete.debug.xcconfig"; sourceTree = "<group>"; };
+		9A8AA16A43B46118465C8638 /* Pods_HealthForAthlete.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthForAthlete.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9136E7E00781F03B661503B /* Pods-HealthForAthleteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthForAthleteTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HealthForAthleteTests/Pods-HealthForAthleteTests.release.xcconfig"; sourceTree = "<group>"; };
+		CD183F37EA323ACCDE8CDC49 /* Pods-HealthForAthleteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthForAthleteTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HealthForAthleteTests/Pods-HealthForAthleteTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01553F1E1E932FA400AB6577 /* HealthKit.framework in Frameworks */,
+				74827216B633D20647210C47 /* Pods_HealthForAthlete.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24944D9B65CE3835E290D05F /* Pods_HealthForAthleteTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +86,8 @@
 			isa = PBXGroup;
 			children = (
 				01553F1D1E932FA400AB6577 /* HealthKit.framework */,
+				9A8AA16A43B46118465C8638 /* Pods_HealthForAthlete.framework */,
+				423C3C8755B8EE7D461895EE /* Pods_HealthForAthleteTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -93,6 +99,7 @@
 				01D9E1331E8CBA380010C208 /* HealthForAthleteTests */,
 				01D9E11D1E8CBA370010C208 /* Products */,
 				01553F181E9326FD00AB6577 /* Frameworks */,
+				7D2498A6E57E7C3EABC0C77B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,21 +116,18 @@
 			isa = PBXGroup;
 			children = (
 				01553F171E9326FD00AB6577 /* HealthForAthlete.entitlements */,
+				010DA0541FC672570069A0FC /* CalendarTableViewCell.swift */,
 				01D9E11F1E8CBA370010C208 /* AppDelegate.swift */,
-				01D9E1211E8CBA370010C208 /* ViewController.swift */,
-				0100AF7F1E9C77090054D6E5 /* CreateScheduleViewController.swift */,
-				012A0A941E9DE460007E3347 /* TestCreateViewController.swift */,
 				01D9E1471E8E0D400010C208 /* TabBarViewController.swift */,
 				01D9E1411E8DF6230010C208 /* ProfileViewController.swift */,
 				01D9E1231E8CBA370010C208 /* Main.storyboard */,
-				0100AF791E987E890054D6E5 /* FitnessActivitiesTableViewCell.swift */,
-				0100AF7B1E9896700054D6E5 /* FitnessActivitiesTableViewController.swift */,
-				0100AF7D1E9897330054D6E5 /* FitnessActivity.swift */,
-				01D9E1451E8E0A690010C208 /* SchedulesViewController.swift */,
+				01D9E1451E8E0A690010C208 /* YourCalendarViewController.swift */,
 				01D9E1431E8E09580010C208 /* TodayInfoViewController.swift */,
 				01D9E1261E8CBA370010C208 /* Assets.xcassets */,
 				01D9E1281E8CBA370010C208 /* LaunchScreen.storyboard */,
 				01D9E12B1E8CBA370010C208 /* Info.plist */,
+				01ACCAAD1FB8F6B10074E6D7 /* CustomCell.swift */,
+				010DA0561FC6732A0069A0FC /* CalendarTableViewCell.xib */,
 			);
 			path = HealthForAthlete;
 			sourceTree = "<group>";
@@ -137,6 +141,17 @@
 			path = HealthForAthleteTests;
 			sourceTree = "<group>";
 		};
+		7D2498A6E57E7C3EABC0C77B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C446F7031269CECDFCC9F04 /* Pods-HealthForAthlete.debug.xcconfig */,
+				4523A4EA5C4AA920B39A1E18 /* Pods-HealthForAthlete.release.xcconfig */,
+				CD183F37EA323ACCDE8CDC49 /* Pods-HealthForAthleteTests.debug.xcconfig */,
+				B9136E7E00781F03B661503B /* Pods-HealthForAthleteTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,9 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 01D9E1391E8CBA380010C208 /* Build configuration list for PBXNativeTarget "HealthForAthlete" */;
 			buildPhases = (
+				B8D0CBA16E44A7B9E2F029CB /* [CP] Check Pods Manifest.lock */,
 				01D9E1181E8CBA370010C208 /* Sources */,
 				01D9E1191E8CBA370010C208 /* Frameworks */,
 				01D9E11A1E8CBA370010C208 /* Resources */,
+				5AD85FF5646FDBE6B40400D7 /* [CP] Embed Pods Frameworks */,
+				7368411A4340CA77C9B3B941 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -161,9 +179,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 01D9E13C1E8CBA380010C208 /* Build configuration list for PBXNativeTarget "HealthForAthleteTests" */;
 			buildPhases = (
+				B5B4E1263F404186E01E4FAB /* [CP] Check Pods Manifest.lock */,
 				01D9E12C1E8CBA370010C208 /* Sources */,
 				01D9E12D1E8CBA370010C208 /* Frameworks */,
 				01D9E12E1E8CBA370010C208 /* Resources */,
+				46FA0537EBCDAB5ED9AF29D9 /* [CP] Embed Pods Frameworks */,
+				7EAA861CE80C64767CCECC3A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -229,6 +250,7 @@
 				01D9E12A1E8CBA370010C208 /* LaunchScreen.storyboard in Resources */,
 				01D9E1271E8CBA370010C208 /* Assets.xcassets in Resources */,
 				01D9E1251E8CBA370010C208 /* Main.storyboard in Resources */,
+				010DA0571FC6732A0069A0FC /* CalendarTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +263,108 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		46FA0537EBCDAB5ED9AF29D9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HealthForAthleteTests/Pods-HealthForAthleteTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5AD85FF5646FDBE6B40400D7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HealthForAthlete/Pods-HealthForAthlete-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JTAppleCalendar/JTAppleCalendar.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JTAppleCalendar.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HealthForAthlete/Pods-HealthForAthlete-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7368411A4340CA77C9B3B941 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HealthForAthlete/Pods-HealthForAthlete-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7EAA861CE80C64767CCECC3A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HealthForAthleteTests/Pods-HealthForAthleteTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5B4E1263F404186E01E4FAB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HealthForAthleteTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8D0CBA16E44A7B9E2F029CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HealthForAthlete-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		01D9E1181E8CBA370010C208 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -248,15 +372,11 @@
 			files = (
 				01D9E1441E8E09580010C208 /* TodayInfoViewController.swift in Sources */,
 				01D9E1421E8DF6230010C208 /* ProfileViewController.swift in Sources */,
-				0100AF7A1E987E8A0054D6E5 /* FitnessActivitiesTableViewCell.swift in Sources */,
-				01D9E1221E8CBA370010C208 /* ViewController.swift in Sources */,
-				0100AF7E1E9897330054D6E5 /* FitnessActivity.swift in Sources */,
-				0100AF801E9C77090054D6E5 /* CreateScheduleViewController.swift in Sources */,
 				01D9E1201E8CBA370010C208 /* AppDelegate.swift in Sources */,
-				0100AF7C1E9896700054D6E5 /* FitnessActivitiesTableViewController.swift in Sources */,
+				010DA0551FC672570069A0FC /* CalendarTableViewCell.swift in Sources */,
 				01D9E1481E8E0D400010C208 /* TabBarViewController.swift in Sources */,
-				01D9E1461E8E0A690010C208 /* SchedulesViewController.swift in Sources */,
-				012A0A951E9DE460007E3347 /* TestCreateViewController.swift in Sources */,
+				01ACCAAE1FB8F6B10074E6D7 /* CustomCell.swift in Sources */,
+				01D9E1461E8E0A690010C208 /* YourCalendarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +515,7 @@
 		};
 		01D9E13A1E8CBA380010C208 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C446F7031269CECDFCC9F04 /* Pods-HealthForAthlete.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = HealthForAthlete/HealthForAthlete.entitlements;
@@ -409,6 +530,7 @@
 		};
 		01D9E13B1E8CBA380010C208 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4523A4EA5C4AA920B39A1E18 /* Pods-HealthForAthlete.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = HealthForAthlete/HealthForAthlete.entitlements;
@@ -423,6 +545,7 @@
 		};
 		01D9E13D1E8CBA380010C208 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD183F37EA323ACCDE8CDC49 /* Pods-HealthForAthleteTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -437,6 +560,7 @@
 		};
 		01D9E13E1E8CBA380010C208 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9136E7E00781F03B661503B /* Pods-HealthForAthleteTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
